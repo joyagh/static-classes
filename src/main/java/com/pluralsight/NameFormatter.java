@@ -6,11 +6,11 @@ public class NameFormatter {
 
     }
     public static String format(String firstName, String lastName){
-        return firstName + lastName;
+        return lastName + "," + firstName;
     }
 
     public static String format(String prefix, String firstName, String middleName, String lastName, String suffix ){
-        return prefix + firstName + middleName + lastName + suffix;
+        return lastName + "," + prefix +  firstName + middleName + ", " + suffix;
 
 
     }
@@ -24,6 +24,12 @@ public class NameFormatter {
             String suffix = name[4];
 
             return format(prefix, firstName, middleName, lastName, suffix);
+        }else if (name.length== 4 ){
+            String firstName = name[0];
+            String middleName = name[1];
+            String lastName = name[2];
+            String suffix = name[3];
+            return format()
         }
     }
 }
