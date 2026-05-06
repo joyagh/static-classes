@@ -6,7 +6,7 @@ public class NameFormatter {
 
     }
     public static String format(String firstName, String lastName){
-        return lastName + "," + firstName;
+        return firstName + lastName;
     }
 
     public static String format(String prefix, String firstName, String middleName, String lastName, String suffix ){
