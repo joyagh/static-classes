@@ -16,9 +16,14 @@ public class NameFormatter {
     }
     public static String format(String fullName){
         String[] name = fullName.split(" ");
-        if (name.length == 5){
+        if (name.length == 5) {
             String prefix = name[0];
-            Stri
+            String firstName = name[1];
+            String middleName = name[2];
+            String lastName = name[3];
+            String suffix = name[4];
+
+            return format(prefix, firstName, middleName, lastName, suffix);
         }
     }
 }
